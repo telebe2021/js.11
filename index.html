@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <style>
+        body {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          background-color: #f0f0f0;
+        }
+    
+        #feedback-container {
+          text-align: center;
+          padding: 20px;
+          border-radius: 10px;
+          width: 300px;
+        }
+    
+        #emoji-container {
+          font-size: 2em;
+          margin-bottom: 10px;
+        }
+    
+        button {
+          padding: 10px;
+          background-color: #3498db;
+          color: #fff;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+    
+        #unhappy {
+          background-color: #e74c3c;
+        }
+    
+        #neutral {
+          background-color: #3498db;
+        }
+    
+        #satisfied {
+          background-color: #2ecc71;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <div id="feedback-container">
+      <div id="emoji-container">😊</div>
+      <button id="happy" onclick="giveFeedback('satisfied')">Satisfied</button>
+      <button id="neutral" onclick="giveFeedback('neutral')">Neutral</button>
+      <button id="unhappy" onclick="giveFeedback('unhappy')">Unhappy</button>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
